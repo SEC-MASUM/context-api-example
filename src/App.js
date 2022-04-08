@@ -10,8 +10,12 @@ export const CountContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(1);
+
+  let value = { count, setCount, name: "Masum", count2, setCount2 };
 
   return (
+    // <CountContext.Provider value={value}> // pass multiple data
     <CountContext.Provider value={[count, setCount]}>
       <div className="app">
         <div className="counter-container">

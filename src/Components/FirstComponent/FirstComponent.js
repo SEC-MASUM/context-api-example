@@ -7,6 +7,8 @@ import { CountContext } from "../../App";
 const FirstComponent = () => {
   const [count, setCount] = useContext(CountContext);
 
+  // const { count, setCount, name, count2, setCount2 } = useContext(CountContext); // received multiple data from CountContext
+
   console.log(count);
   return (
     <div className="first-component">

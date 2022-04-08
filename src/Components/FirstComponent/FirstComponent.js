@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import FirstComponentChild from "../FirstComponentChild/FirstComponentChild";
 import { GrFormAdd } from "react-icons/gr";
 import { AiOutlineMinus } from "react-icons/ai";
+import { CountContext } from "../../App";
 
 const FirstComponent = () => {
+  const x = useContext(CountContext);
+
+  console.log(x);
   return (
     <div className="first-component">
       <div className="counter-container">

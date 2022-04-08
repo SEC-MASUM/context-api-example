@@ -6,7 +6,7 @@ import { GrFormAdd } from "react-icons/gr";
 import { AiOutlineMinus } from "react-icons/ai";
 import { createContext, useState } from "react";
 
-const CountContext = createContext();
+export const CountContext = createContext();
 
 function App() {
   const [count, setCount] = useState(0);

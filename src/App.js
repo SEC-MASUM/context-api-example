@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <CountContext.Provider value={{ name: "Masum" }}>
+    <CountContext.Provider value={[count, setCount]}>
       <div className="app">
         <div className="counter-container">
           <h1>App</h1>
